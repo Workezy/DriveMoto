@@ -1,0 +1,223 @@
+body {
+  font-family: "SF Pro Display", sans-serif;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.header_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.header_menu--item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 50px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2f3035;
+}
+.user_content {
+  display: flex;
+  flex-direction: row;
+}
+.user_content--item {
+  margin-right: 10px;
+}
+.navbar {
+  margin-top: 25px;
+  height: 53px;
+  display: flex;
+  background-color: #f0f0f4;
+}
+.navbar--item {
+  margin-right: 60px;
+  padding: 15px 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2f3035;
+}
+.navbar--item:hover {
+  transition: 0.3s;
+  border-bottom: 3px solid #1c62cd;
+  color: #2f3035;
+}
+
+.page-navigation {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.page-navigation-item {
+  margin-right: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #c4c4c4;
+}
+.arrow-nav {
+  margin-right: 10px;
+}
+.jetskis-title {
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #2f3035;
+}
+.sorting {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sorting-leftmenu-item {
+  margin-right: 10px;
+  padding: 5px 25px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2f3035;
+  opacity: 0.7;
+
+  background: #f0f0f4;
+  border-radius: 3px;
+}
+.sorting-rightmenu {
+  position: relative;
+}
+.sorting-rightmenu-dropdown:hover .sorting-rightmenu-dropdown-content {
+  visibility: visible;
+  display: flex;
+}
+.sorting-rightmenu-dropbtn {
+  width: 178px;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  border: 1.5px solid #d7d9df;
+}
+.arrow-down {
+  margin-left: 15px;
+  border: solid #d7d9df;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.sorting-rightmenu-dropdown-content {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  visibility: hidden;
+
+  background-color: #ffffff;
+  border: 1.5px solid #d7d9df;
+}
+.sorting-rightmenu-dropdown-content--item {
+  padding: 10px 20px;
+  padding-right: 50px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  border: 1.5px solid #d7d9df;
+  color: #2f3035;
+}
+.sorting-rightmenu-dropdown-content--item:hover {
+  transition: 0.3s;
+  box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+}
+
+.filter-sidebar {
+  margin-top: 50px;
+}
+.filter-sidebar-nav {
+  display: flex;
+  flex-direction: row;
+}
+.filter-sidebar-nav--item {
+  position: relative;
+  margin-right: 40px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+.sidebar-nav--active:after {
+  margin-top: 5px;
+  display: block;
+  position: absolute;
+  left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+  width: 0; /*задаём длинну линии до наведения курсора*/
+  height: 2px; /*задаём ширину линии*/
+  background-color: #1c62cd; /*задаём цвет линии*/
+  content: "";
+  transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+.sidebar-nav--active:hover:after,
+.sidebar-nav--active:focus:after {
+  width: 100%;
+}
+.sidebar-nav--unactive {
+  color: #c4c4c4;
+}
+.sidebar-nav--active {
+  color: #2f3035;
+}
+.filter-sidebar-availability {
+  margin-top: 50px;
+}
+.availability-dropbtn {
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2f3035;
+}
+.availability-dropdown-content {
+  margin-top: 20px;
+  visibility: hidden;
+  display: none;
+}
+.availability-dropdown-content input {
+  margin-right: 10px;
+}
+.availability-dropdown-content label {
+  margin-right: 50px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2f3035;
+}
+.arrow {
+  margin-right: 15px;
+  border: solid #c4c4c4;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.dropdown-content--active {
+  visibility: visible;
+  display: flex;
+}
